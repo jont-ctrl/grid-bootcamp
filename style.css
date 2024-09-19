@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: hsl(0, 0%, 95%);
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid-item {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  /* margin: 1rem; */
+  font-weight: bold;
+}
+
+li,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

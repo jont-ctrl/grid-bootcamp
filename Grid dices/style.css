@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: hsl(0, 0%, 95%);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 5rem;
+}
+
+.allDices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.dice6,
+.dice5,
+.dice4,
+.dice3,
+.dice2,
+.dice1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  background-color: white;
+  border: 2px solid black;
+  width: 10rem;
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+
+.dot {
+  width: 75%;
+  height: 75%;
+  border-radius: 2000rem;
+  align-self: center;
+  justify-self: center;
+  background-color: black;
+}
+
+/* Dice 6 */
+#dot1-6 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#dot2-6 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+#dot3-6 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+#dot4-6 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+#dot5-6 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+#dot6-6 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+/* Dice 5 */
+#dot1-5 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#dot2-5 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+#dot3-5 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+#dot4-5 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+#dot5-5 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+/* Dice 4 */
+#dot1-4 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#dot2-4 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+#dot3-4 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+#dot4-4 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+/* Dice 3 */
+#dot1-3 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#dot2-3 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+#dot3-3 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+/* Dice 2 */
+#dot1-2 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#dot2-2 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+/* Dice 1 */
+#dot1-1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
