@@ -6,7 +6,9 @@ body {
 .gridLayout {
   display: grid;
   gap: 0.5rem;
+  width: 100%;
   grid-template-columns: 3fr 2fr;
+  grid-template-rows: 12rem 4rem 24rem 8rem;
   grid-template-areas:
     'header header'
     'nav nav'
@@ -17,7 +19,6 @@ body {
 header {
   background-color: lightblue;
   grid-area: header;
-  min-height: 10rem;
 }
 
 nav {
@@ -28,7 +29,6 @@ nav {
 main {
   background-color: lightskyblue;
   grid-area: main;
-  min-height: 20rem;
 }
 
 aside {
@@ -39,11 +39,17 @@ aside {
 footer {
   background-color: lightpink;
   grid-area: footer;
-  min-height: 6rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .gridLayout {
     grid-template-columns: 1fr;
+    grid-template-rows: 4rem 12rem 24rem 16rem 8rem;
+    grid-template-areas:
+      'nav'
+      'header'
+      'main'
+      'aside'
+      'footer';
   }
 }
